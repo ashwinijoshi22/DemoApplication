@@ -1,0 +1,16 @@
+
+<section id="questionContainer">
+    <div *ngIf="!isSubmit ; else submitBlock">
+        <div>Question {{selectedQuestionIndex}}</div>
+        <app-question-content></app-question-content>
+        <app-question-footer></app-question-footer>
+    </div>
+    <ng-template #submitBlock>
+        <div>
+            <P>Your Answers</P>
+            <ul>
+                <li *ngFor="let question of questionList">{{question.text}} : {{question.value}}</li>
+            </ul>
+        </div>
+    </ng-template>
+</section>

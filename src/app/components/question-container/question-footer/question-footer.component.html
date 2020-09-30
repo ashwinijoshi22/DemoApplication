@@ -1,0 +1,12 @@
+<section id="questionFooterContainer">
+    <div *ngIf="selectedQuestionIndex < questionList.length - 1 ; else sumbitBlock">
+        <span id="questionInfo">Question {{selectedQuestionIndex + 1}}/{{questionList.length}}</span>
+        <button id="prevButton" (click)="handlePrev()">Prev</button>
+        <button (click)="handleNext()">Next</button>
+    </div>
+    <ng-template #sumbitBlock>
+        <div>
+            <button (click)="handleSubmit()">Submit</button>
+        </div>
+    </ng-template>
+</section>

@@ -1,0 +1,20 @@
+#questionFooterContainer {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#questionFooterContainer>div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#questionInfo {
+    margin-right: 10px;
+}
+
+#prevButton {
+    margin-right: 10px;
+}

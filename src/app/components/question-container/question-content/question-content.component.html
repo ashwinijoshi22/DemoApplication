@@ -1,0 +1,4 @@
+<section id="questionContentContainer">
+    <div>{{selectedQuestion.text}}</div>
+    <div><input [(ngModel)]="selectedQuestion.value" type={{selectedQuestion.type}} (change)="handleValueChange(event)" /></div>
+</section>
